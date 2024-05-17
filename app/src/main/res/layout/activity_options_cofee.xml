@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.OptionsCofeeActivity">
+
+    <TextView
+        android:id="@+id/text_nome_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/coffee_with_code"
+        android:textColorHint="@color/brown_800"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_frase_cafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/que_tal_um_caf"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_nome_app" />
+
+    <CheckBox
+        android:id="@+id/check_mocca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/mocca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_frase_cafe" />
+
+    <ImageView
+        android:id="@+id/image_mocca"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:src="@mipmap/mocaccino"
+        app:layout_constraintStart_toEndOf="@id/check_mocca"
+        app:layout_constraintTop_toTopOf="@id/check_mocca"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_quantidade_mocca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/quantidade"
+        app:layout_constraintStart_toEndOf="@id/image_mocca"
+        app:layout_constraintTop_toTopOf="@id/image_mocca" />
+
+    <EditText
+        android:id="@+id/edit_quantidade_mocca"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/_0"
+        app:layout_constraintStart_toEndOf="@id/text_quantidade_mocca"
+        app:layout_constraintTop_toTopOf="@id/image_mocca"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/text_preco_mocca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/_15r"
+        app:layout_constraintStart_toEndOf="@id/edit_quantidade_mocca"
+        app:layout_constraintTop_toTopOf="@id/text_quantidade_mocca" />
+
+    <CheckBox
+        android:id="@+id/check_latte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/latte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/check_mocca" />
+
+    <ImageView
+        android:id="@+id/image_latte"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/latte"
+        app:layout_constraintStart_toStartOf="@id/image_mocca"
+        app:layout_constraintTop_toBottomOf="@id/image_mocca"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_quantidade_latte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/quantidade"
+        app:layout_constraintStart_toEndOf="@id/image_latte"
+        app:layout_constraintTop_toTopOf="@id/image_latte" />
+
+    <EditText
+        android:id="@+id/edit_quantidade_latte"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/_0"
+        app:layout_constraintStart_toEndOf="@id/text_quantidade_latte"
+        app:layout_constraintTop_toTopOf="@id/image_latte"
+        tools:ignore="Autofill,LabelFor" />
+
+    <CheckBox
+        android:id="@+id/check_iced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/iced"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/check_latte" />
+
+    <ImageView
+        android:id="@+id/image_iced"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/iced_macchiatto"
+        app:layout_constraintStart_toStartOf="@id/image_latte"
+        app:layout_constraintTop_toBottomOf="@id/image_latte"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_quantidade_iced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/quantidade"
+        app:layout_constraintStart_toEndOf="@id/image_iced"
+        app:layout_constraintTop_toTopOf="@id/image_iced" />
+
+    <TextView
+        android:id="@+id/text_preco_latte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/_10r"
+        app:layout_constraintStart_toEndOf="@id/edit_quantidade_latte"
+        app:layout_constraintTop_toTopOf="@id/text_quantidade_latte" />
+
+    <EditText
+        android:id="@+id/edit_quantidade_iced"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/_0"
+        app:layout_constraintStart_toEndOf="@id/text_quantidade_iced"
+        app:layout_constraintTop_toTopOf="@id/image_iced"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/text_preco_iced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/r_12_00"
+        app:layout_constraintStart_toEndOf="@id/edit_quantidade_iced"
+        app:layout_constraintTop_toTopOf="@id/text_quantidade_iced" />
+
+    <CheckBox
+        android:id="@+id/check_coado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/coado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/check_iced" />
+
+    <ImageView
+        android:id="@+id/image_coado"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/coado"
+        app:layout_constraintStart_toStartOf="@id/image_iced"
+        app:layout_constraintTop_toBottomOf="@id/image_iced"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_quantidade_coado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/quantidade"
+        app:layout_constraintStart_toEndOf="@id/image_coado"
+        app:layout_constraintTop_toTopOf="@id/image_coado" />
+
+    <EditText
+        android:id="@+id/edit_quantidade_coado"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/_0"
+        app:layout_constraintStart_toEndOf="@id/text_quantidade_coado"
+        app:layout_constraintTop_toTopOf="@id/image_coado"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/text_preco_coado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/_5r"
+        app:layout_constraintStart_toEndOf="@id/edit_quantidade_coado"
+        app:layout_constraintTop_toTopOf="@id/text_quantidade_coado" />
+
+    <TextView
+        android:id="@+id/text_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/total"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/button_pedir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/brown_800"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/pedir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_limpar_campos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/brown_800"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/limpar_campos"
+        app:layout_constraintVertical_bias="1.3"
+        app:layout_constraintBottom_toBottomOf="@id/button_pedir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

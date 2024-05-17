@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CoffeWithCode</string>
+    <string name="coffee_with_code">Coffee With Code</string>
+    <string name="vamos_l">Vamos lá</string>
+    <string name="ol_que_tal_um_caf_zinho">Olá! Que tal um cafézinho?</string>
+    <string name="mocca">Mocca</string>
+    <string name="que_tal_um_caf">Que tal um café?</string>
+    <string name="latte">Latte</string>
+    <string name="quantidade">Quantidade:</string>
+    <string name="_0">0</string>
+    <string name="iced">Iced</string>
+    <string name="coado">Coado</string>
+    <string name="_5r">R$ 5</string>
+    <string name="pedir">PEDIR</string>
+    <string name="_15r">R$ 15</string>
+    <string name="_10r">R$ 10</string>
+    <string name="r_12_00">R$ 12</string>
+    <string name="total">Total:</string>
+    <string name="limpar_campos">LIMPAR CAMPOS</string>
+</resources>
